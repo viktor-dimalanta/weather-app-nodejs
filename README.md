@@ -32,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
 
 * Enter the project, then go to a terminal
 * Once the installation is complete, type **npm -i** in the terminal. Install the dependencies in the local node_modules folder.
-* Type : npm start in the terminal
+* Type : **npm start** in the terminal
 ## Unit Test
 
 npm test
