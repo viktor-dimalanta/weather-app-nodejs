@@ -13,6 +13,9 @@ const forecast = (data, callback) => {
                 callback('Unable to connect to weather service!');
             } else if (body.cod && body.message) {
                 callback(`Unable to find location. ${body.message}. Try another search!`);
+            } else if (!body || !body.current) {
+                    console.error('Invalid response from weather service:', body);
+                    callback('Invalid response from weather service!');
             } else {
                 const forecastData = {
                     location: item.location,
