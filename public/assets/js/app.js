@@ -32,6 +32,8 @@ weatherForm.addEventListener('submit', (event) => {
 const renderForeCastHTML = (locations) => {
     var innerHTML = ''
     locations.forEach(function (location) {
+        console.log(location.icon)
+
         innerHTML +=
             `<div class="list-group">
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -52,25 +54,25 @@ const renderForeCastHTML = (locations) => {
 
 const getSrcImg = (location) => {
     switch (location.icon) {
-        case 'clear-day':
+        case '01d':
             return './assets/images/clear-day.png'
-        case 'clear-night':
+        case '01n':
             return './assets/images/clear-night.png'
-        case 'partly-cloudy-day':
+        case '03d':
             return './assets/images/partly-cloudy-day.png'
-        case 'partly-cloudy-night':
+        case '04d':
             return './assets/images/partly-cloudy-night.png'
-        case 'cloudy':
+        case '09d':
             return './assets/images/cloudy.png'
-        case 'rain':
+        case '10d':
             return './assets/images/rain.png'
-        case 'sleet':
+        case '11d':
             return './assets/images/sleet.png'
-        case 'snow':
+        case '13n':
             return './assets/images/snow.png'
-        case 'wind':
+        case '50d':
             return './assets/images/wind.png'
-        case 'fog':
+        case '50n':
             return './assets/images/fog.png'
         default:
             return './assets/images/clear-day.png'
