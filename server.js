@@ -50,5 +50,5 @@ app.get('/weather', (req, res) => {
 
 const port = process.env.PORT || config.server.port;
 app.listen(port, () => {
-    console.log('Server running at port ' + port + ' : http://127.0.0.1:' + port)
+    console.log('Server running at port ' + port + ' : http://localhost:' + port)
 })
