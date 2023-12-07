@@ -24,7 +24,7 @@ Before you begin, ensure you have met the following requirements:
 On Github, go to the main page of the project
 Open a terminal, or git bash
 Replace the current working directory with the location where you want to clone it.
-Type git clone https://github.com/Grezor/Weather-App.git](https://github.com/viktor-dimalanta/weather-app-nodejs press on Entry
+Type git clone https://github.com/viktor-dimalanta/weather-app-nodejs press on Entry
 
 ## Installing Weather App
 
