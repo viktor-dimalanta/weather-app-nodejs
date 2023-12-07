@@ -21,7 +21,7 @@ const forecast = (data, callback) => {
                     summary: body.current.weather[0].description,
                     icon: body.current.weather[0].icon,
                     temperature: body.current.temp,
-                    precipProbability: body.current.pop,
+                    precipProbability: body.current.humidity,
                 };
 
                 forecastDataList.push(forecastData);
