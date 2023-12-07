@@ -1,10 +1,11 @@
+require('dotenv').config();
 const request = require('request');
 
 const forecast = (data, callback) => {
     const forecastDataList = [];
 
     data.forEach(function (item) {
-        const apiKey = '3112fa80a027dc13663e30c279bd6dbc';
+        const apiKey = process.env.OPENWEATHERMAP_API_KEY;
         const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${item.latitude}&lon=${item.longitude}&units=metric&appid=${apiKey}`;
 
         request({ url, json: true }, (error, { body }) => {
