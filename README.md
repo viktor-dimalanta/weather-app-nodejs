@@ -18,21 +18,21 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installing Weather App
 
-On Github, go to the main page of the project
-Open a terminal, or git bash
-Replace the current working directory with the location where you want to clone it.
-Type git clone https://github.com/viktor-dimalanta/weather-app-nodejs press on Entry
+* On Github, go to the main page of the project
+* Open a terminal, or git bash
+* Replace the current working directory with the location where you want to clone it.
+* Type git clone https://github.com/viktor-dimalanta/weather-app-nodejs press on Entry
 
 ### Use the following API
 
-MAPBOX_API_KEY=pk.eyJ1IjoidGhvcnZpYzI4IiwiYSI6ImNscHVnZjlqZzBqZDkyam82dHoxOXNuMGoifQ.qq1cG9Q507EBUskc8wsrHA
-OPENWEATHERMAP_API_KEY=3112fa80a027dc13663e30c279bd6dbc
+* MAPBOX_API_KEY=pk.eyJ1IjoidGhvcnZpYzI4IiwiYSI6ImNscHVnZjlqZzBqZDkyam82dHoxOXNuMGoifQ.qq1cG9Q507EBUskc8wsrHA
+* OPENWEATHERMAP_API_KEY=3112fa80a027dc13663e30c279bd6dbc
 
 ## Starting the Weather App
 
-Enter the project, then go to a terminal
-Once the installation is complete, type npm -i in the terminal. Install the dependencies in the local node_modules folder.
-Type : npm start in the terminal
+* Enter the project, then go to a terminal
+* Once the installation is complete, type npm -i in the terminal. Install the dependencies in the local node_modules folder.
+* Type : npm start in the terminal
 
 ## Contact
 
