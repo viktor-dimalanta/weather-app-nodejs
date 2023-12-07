@@ -8,6 +8,8 @@ This project is weather application that uses open weather API and Map Box API
 
 Quickly access accurate weather information with a clean, modern and user-friendly design.
 
+![image](https://github.com/viktor-dimalanta/weather-app-nodejs/assets/45250045/94cad3b4-9b85-47ff-b268-a5e1639980ab)
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
