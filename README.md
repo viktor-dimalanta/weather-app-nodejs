@@ -25,20 +25,20 @@ Before you begin, ensure you have met the following requirements:
 
 ### Use the following API
 
-* MAPBOX_API_KEY=pk.eyJ1IjoidGhvcnZpYzI4IiwiYSI6ImNscHVnZjlqZzBqZDkyam82dHoxOXNuMGoifQ.qq1cG9Q507EBUskc8wsrHA
-* OPENWEATHERMAP_API_KEY=3112fa80a027dc13663e30c279bd6dbc
+* _MAPBOX_API_KEY_ = pk.eyJ1IjoidGhvcnZpYzI4IiwiYSI6ImNscHVnZjlqZzBqZDkyam82dHoxOXNuMGoifQ.qq1cG9Q507EBUskc8wsrHA
+* _OPENWEATHERMAP_API_KEY_ = 3112fa80a027dc13663e30c279bd6dbc
 
 ## Starting the Weather App
 
 * Enter the project, then go to a terminal
-* Once the installation is complete, type npm -i in the terminal. Install the dependencies in the local node_modules folder.
+* Once the installation is complete, type **npm -i** in the terminal. Install the dependencies in the local node_modules folder.
 * Type : npm start in the terminal
 
 ## Contact
 
-If you want to contact me you can reach me at <dimalantaviktorangelo@gmail.com>.
+If you want to contact me you can reach me at <dimalantaviktorangelo@gmail.com>. or at my mobile number **09756661934**
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project is licensed to Viktor Dimalanta 
+This project is licensed to **Viktor Dimalanta, MSIT**
