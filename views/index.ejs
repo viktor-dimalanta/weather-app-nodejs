@@ -1,0 +1,19 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Weather App</h1>
+  <form action="/weather" method="GET">
+    <label for="location">Enter location:</label>
+    <input type="text" id="location" name="location" required>
+    <button type="submit">Get Weather</button>
+  </form>
+</body>
+</html>
