@@ -1,40 +1,55 @@
 /* public/style.css */
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 20px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  form {
-    margin-top: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input {
-    padding: 8px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  p {
-    margin-top: 15px;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin-top: 15px;
+}
+
+#map {
+  height: 300px;
+  margin-top: 10px;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
