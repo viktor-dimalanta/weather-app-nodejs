@@ -41,7 +41,7 @@ const renderForeCastHTML = (locations) => {
                 </div>
                 <p class="mb-1">
                     It is currently <span class="badge badge-pill badge-dark">` + location.temperature + `°С</span> out.
-                    There is ` + location.temperature + `% chance of rain
+                    There is ` + location.precipProbability + `% chance of rain
                 </p>
             <small>Geo coords <span class="geo-coords">[` + location.latitude + ',' + location.longitude + `]</span></small>
         </a>
