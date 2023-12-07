@@ -23,7 +23,7 @@ Open a terminal, or git bash
 Replace the current working directory with the location where you want to clone it.
 Type git clone https://github.com/viktor-dimalanta/weather-app-nodejs press on Entry
 
-# Use the following API
+### Use the following API
 
 MAPBOX_API_KEY=pk.eyJ1IjoidGhvcnZpYzI4IiwiYSI6ImNscHVnZjlqZzBqZDkyam82dHoxOXNuMGoifQ.qq1cG9Q507EBUskc8wsrHA
 OPENWEATHERMAP_API_KEY=3112fa80a027dc13663e30c279bd6dbc
