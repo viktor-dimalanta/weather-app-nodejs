@@ -7,6 +7,6 @@ weatherForecast.getForecastData(sampleData, (error, result) => {
   if (error) {
     console.error(error);
   } else {
-    console.log(result);
+    console.log("Success");
   }
 });

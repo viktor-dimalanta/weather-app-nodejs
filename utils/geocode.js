@@ -5,6 +5,6 @@ geocodeService.geocode('address', (error, result) => {
   if (error) {
     console.error(error);
   } else {
-    console.log(result.data);
+    console.log("Success");
   }
 });
