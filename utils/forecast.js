@@ -6,7 +6,8 @@ const forecast = (data, callback) => {
 
     data.forEach(function (item) {
         const apiKey = process.env.OPENWEATHERMAP_API_KEY;
-        const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${item.latitude}&lon=${item.longitude}&units=metric&appid=${apiKey}`;
+        const openWeatherUrl = process.env.OPENWEATHER_URL;
+        const url = `${openWeatherUrl}?lat=${item.latitude}&lon=${item.longitude}&units=metric&appid=${apiKey}`;
 
         request({ url, json: true }, (error, { body }) => {
             if (error) {
