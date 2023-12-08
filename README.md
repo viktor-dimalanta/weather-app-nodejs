@@ -25,10 +25,12 @@ Before you begin, ensure you have met the following requirements:
 * Replace the current working directory with the location where you want to clone it.
 * Type git clone https://github.com/viktor-dimalanta/weather-app-nodejs press on Entry
 
-### Use the following API
+### Use the following API (.env)
 
 * _MAPBOX_API_KEY_ = pk.eyJ1IjoidGhvcnZpYzI4IiwiYSI6ImNscHVnZjlqZzBqZDkyam82dHoxOXNuMGoifQ.qq1cG9Q507EBUskc8wsrHA
 * _OPENWEATHERMAP_API_KEY_ = 3112fa80a027dc13663e30c279bd6dbc
+* OPENWEATHER_URL=https://api.openweathermap.org/data/2.5/onecall
+* MAPBOX_API_URL=https://api.mapbox.com/geocoding/v5/mapbox.places/
 
 ## Starting the Weather App
 
