@@ -5,6 +5,12 @@ var config = require('./config/config')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+const GeocodeService = require('./utils/GeocodeService');
+const geocodeService = new GeocodeService(process.env.MAPBOX_API_URL, process.env.MAPBOX_API_KEY);
+
+const WeatherForecastService = require('./utils/WeatherForecastService');
+const weatherForecast = new WeatherForecastService(process.env.OPENWEATHERMAP_API_KEY, process.env.OPENWEATHER_URL);
+
 const app = express()
 
 /*** Define paths for Express config ***/
@@ -32,11 +38,11 @@ app.get('/weather', (req, res) => {
             error: "You must provide an address"
         })
     }
-    geocode(req.query.address, (error, { data }) => {
+    geocodeService.geocode(req.query.address, (error, { data }) => {
         if (error) {
             return res.send({ error })
         }
-        forecast(data, (error, forecastData) => {
+        weatherForecast.getForecastData(data, (error, forecastData) => {
             if (error) {
                 return res.send({ error })
             }

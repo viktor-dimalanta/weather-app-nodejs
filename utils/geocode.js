@@ -1,23 +1,10 @@
-const request = require('request')
+const GeocodeService = require('./GeocodeService');
+const geocodeService = new GeocodeService(process.env.MAPBOX_API_URL, process.env.MAPBOX_API_KEY);
 
-const geocode = (address, callback) => {
-    const url = process.env.MAPBOX_API_URL + encodeURIComponent(address) + '.json?access_token=' + process.env.MAPBOX_API_KEY
-    
-    request({ url, json: true }, (error, { body }) => {
-        if (error) {
-            callback('Unable to connect to geocode service !')
-        } else if (body.error) {
-            callback('Unable to find location. Try another search !')
-        } else {
-            const data = []
-            body.features.forEach(feature => data.push({
-                latitude: feature.center[1],
-                longitude: feature.center[0],
-                location: feature.place_name
-            }))
-            callback(undefined, { data })
-        }
-    })
-}
-
-module.exports = geocode
+geocodeService.geocode('address', (error, result) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(result.data);
+  }
+});
