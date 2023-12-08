@@ -32,7 +32,6 @@ weatherForm.addEventListener('submit', (event) => {
 const renderForeCastHTML = (locations) => {
     var innerHTML = ''
     locations.forEach(function (location) {
-        console.log(location.icon)
 
         innerHTML +=
             `<div class="list-group">
