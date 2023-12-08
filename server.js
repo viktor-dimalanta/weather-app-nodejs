@@ -2,8 +2,6 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 var config = require('./config/config')
-const geocode = require('./utils/geocode')
-const forecast = require('./utils/forecast')
 
 const GeocodeService = require('./utils/GeocodeService');
 const geocodeService = new GeocodeService(process.env.MAPBOX_API_URL, process.env.MAPBOX_API_KEY);
