@@ -7,6 +7,7 @@ class GeocodeService {
   }
 
   geocode(address, callback) {
+    try {
     const url = `${this.apiUrl}${encodeURIComponent(address)}.json?access_token=${this.apiKey}`;
 
     request({ url, json: true }, (error, response) => {
@@ -25,6 +26,11 @@ class GeocodeService {
         callback(undefined, { data });
       }
     });
+
+      } catch (exception) {
+        console.error('Exception while fetching weather data:', exception);
+        this.callback('An unexpected error occurred while fetching weather data.');
+      }
   }
 }
 

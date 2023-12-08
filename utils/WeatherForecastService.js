@@ -8,12 +8,13 @@ class WeatherForecastService {
   }
 
   getForecastData(data, callback) {
+    try {
     const forecastDataList = [];
     let errorOccurred = false; // Flag to track whether an error has already occurred
 
     data.forEach((item, index) => {
-        const url = `${this.apiUrl}?lat=${item.latitude}&lon=${item.longitude}&units=metric&appid=${this.apiKey}`;
-        console.log(url)
+      
+      const url = `${this.apiUrl}?lat=${item.latitude}&lon=${item.longitude}&units=metric&appid=${this.apiKey}`;
       request({ url, json: true }, (error, response) => {
         if (!errorOccurred) {
           if (error) {
@@ -44,6 +45,10 @@ class WeatherForecastService {
         }
       });
     });
+    } catch (exception) {
+      console.error('Exception while fetching weather data:', exception);
+      this.callback('An unexpected error occurred while fetching weather data.');
+    }
   }
 }
 
